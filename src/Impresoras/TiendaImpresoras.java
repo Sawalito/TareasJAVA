@@ -12,7 +12,7 @@ public class TiendaImpresoras {
 		
 		System.out.println("Se le debe dar mantenimiento a la impresora 3? "+ im3.Mantenimiento(10));
 		System.out.println("La velocidad de impresion de la tercera impresora es: "+im3.getVelocidad());
-		
+	
 		System.out.println(im4.toString());
 	}
 }

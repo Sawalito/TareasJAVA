@@ -2,7 +2,8 @@ package Impresoras;
 
 public class Impresora {
 	private char tipo;
-	private static int clave=500;
+	private static int folio=500;
+	private int clave;
 	private int mes;
 	private char color;
 	private int velocidad;
@@ -10,7 +11,7 @@ public class Impresora {
 	public Impresora(char tipo,int mes, char color) {
 		super();
 		this.tipo = tipo;
-		this.clave++;
+		this.clave=folio++;
 		this.mes = mes;
 		this.color = color;
 		this.velocidad=22;
@@ -19,7 +20,7 @@ public class Impresora {
 	public Impresora(char tipo,int mes) {
 		super();
 		this.tipo = tipo;
-		this.clave++;
+		this.clave=folio++;
 		this.mes = mes;	
 		switch(tipo) {
 			case 'L':
